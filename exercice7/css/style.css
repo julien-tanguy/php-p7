@@ -1,0 +1,37 @@
+input, select {
+    width : 500px;
+    height : 80px;
+    font-size: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+}
+li {
+    list-style-type: none;
+}
+#button {
+    background-color: #A3A6AA;
+    color: #ffffff;
+}
+#button:hover {
+    background-color: #C4151C;
+}
+form {
+   text-align: center;
+}
+p {
+    color: rgb(45, 47, 49);
+    text-align: center;
+    font-size: 20px;
+}
+#files {
+    width : 250px;
+    height : 40px;
+    font-size: 20px;
+    border-radius: 0px;
+}
+.errors {
+    color: rgb(150, 28, 28);
+    text-align: center;
+    font-size: 17px;
+}
