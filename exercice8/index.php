@@ -18,7 +18,7 @@
         }else if ((empty($_FILES['files']['type'])) && (empty($_FILES['files']['name']))) { ?>
             <p><?php echo 'Bonjour ' . $_GET['civilité'] . ', votre nom est : ' . $_GET['lastname'] . ' et votre prénom : ' . $_GET['firstname'] . '. Veuillez inserer un fichier pdf a votre formulaire.'; ?></p><?php 
         }else { ?>
-        <p><?php echo 'ERREURS, VOTRE FICHIERS DOIT ÊTRE UN PDF!!!!'; ?></p><?php }
+        <p><?php echo 'EFichier invalide, le fichier transmis doit être un PDF.'; ?></p><?php }
     //si la method d'envoie est post
     }else if ((!empty($_POST['lastname']) && preg_match('/^[a-zA-Zàâäéèêëïîôöùûüÿç\-\s\']{3,16}$/', $_POST['lastname'])) && (!empty($_POST['firstname']) && preg_match('/^[a-zA-Zàâäéèêëïîôöùûüÿç\-\s\']{3,16}$/', $_POST['firstname'])) && (!empty($_POST['civilité'] == "monsieur") || !empty($_POST['civilité'] == "madame"))) { 
         if ($_FILES['files']['type'] == 'application/pdf' )  { ?>
